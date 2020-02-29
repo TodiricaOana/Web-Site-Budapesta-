@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>
+        Budapesta - informații generale
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="proiect.css" />
+    <script src="proiect.js"></script>
+   
+  </head>
+<body>
+
+  
+<div class="header">
+  <h1>Budapesta</h1>
+  <p>”Adevărata călătorie de descoperire nu înseamnă a căuta noi peisaje, ci a privi totul cu alți ochi” – Marcel Proust</p>
+</div>
+
+<div class="topnav">
+  <a href="proiect.html">Informații generale</a>
+  <a href="galerie.html">Galerie Foto</a> 
+
+  <div class="dropdown">
+    <a href="atractii.html" class="dropbtn"> Atracții </a>
+    
+    <div class="dropdown-content">
+      <a href="parlament.html">Parlamentul ungar</a>
+      <a href="castelul-buda.html">Castelul Buda</a>
+      <a href="bastionul-pescarilor.html">Bastionul pescarilor</a>
+    </div>
+    
+  </div>
+
+  <a href="rezervari.html" style="float:right">Rezervări</a>
+  
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <br> 
+      <h2 style = "text-align: center;">  Puteți face oricând rezervare la ghidul nostru turistic </h2>
+      
+        <h4> &emsp; Pentru o experiență mai plăcută în vizitarea acestui oraș, tot ce trebuie să faceți este să vă rezervați un loc la ghidul nostru turistic, pentru a vă ajuta în a descoperi, cu minimul de efort, toate frumusețile orașului Budapesta.</h4>
+
+               
+                <div class = "border">
+                    <form action="/action_page.php">
+                      <label for="fname">Nume</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Numele tău..">
+                  
+                      <label for="lname">Prenume</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Prenumele tău..">
+                  
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="Email-ul tău..">
+
+                      <label for="country">Țara</label>
+                      <select id="country" name="country">
+                        <option value="Italia">Italia</option>
+                        <option value="Spania">Spania</option>
+                        <option value="Romania">România</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Franta">Franța</option>
+                        <option value="Elvetia">Elveția</option>
+                      </select>
+                    
+                      <input type="button" value="Send"  onClick="sendInformation()">
+                      <div id='responseArea'></div>
+                    </form>
+                  </div>
+    
+    
+    </div>
+  </div>
+  
+<div class="footer">
+  <h5>Copyright 2019 © Todirica Oana-Andreea</h5>
+</div>
+
+</body>
+</html>
